@@ -1,0 +1,4 @@
+repository "Anamnese@thiagoyc@cloud"
+  path "/"
+    br "/main"
+    co "/main"
