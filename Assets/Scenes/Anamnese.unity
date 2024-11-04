@@ -247,16 +247,16 @@ MonoBehaviour:
   runtimeConfiguration:
     witConfiguration: {fileID: 11400000, guid: dca0cf0f2e354b944b7161b88e019933, type: 2}
     minKeepAliveVolume: 0.0005
-    minKeepAliveTimeInSeconds: 2
-    minTranscriptionKeepAliveTimeInSeconds: 1
+    minKeepAliveTimeInSeconds: 100
+    minTranscriptionKeepAliveTimeInSeconds: 100
     maxRecordingTime: 100
     soundWakeThreshold: 0.0005
-    sampleLengthInMs: 10
+    sampleLengthInMs: 100
     micBufferLengthInSeconds: 1
     maxConcurrentRequests: 5
     sendAudioToWit: 1
     customTranscriptionProvider: {fileID: 0}
-    alwaysRecord: 1
+    alwaysRecord: 0
     preferredActivationOffset: -0.5
     dictationConfiguration:
       multiPhrase: 0
@@ -4340,7 +4340,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1931627531}
+  - {fileID: 894684084}
   - {fileID: 1806586568}
   - {fileID: 1282191487}
   - {fileID: 9110201002082926244}
-  - {fileID: 894684084}
