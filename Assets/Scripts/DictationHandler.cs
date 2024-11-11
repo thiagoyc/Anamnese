@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using Meta.WitAi;
 using Meta.WitAi.Dictation;
-using UnityEngine.Android;
 using Oculus.Voice;
 using Oculus.Voice.Dictation;
 
@@ -11,6 +10,7 @@ public class DictationHandler : MonoBehaviour
     [Header("Wit Configuration")]
     [SerializeField] private AppDictationExperience appVoiceExperience;
     public bool active;
+
     void Start()
     {
         foreach (var device in Microphone.devices)
@@ -19,18 +19,33 @@ public class DictationHandler : MonoBehaviour
         }
     }
 
-    private void Update()
+    // Método público para iniciar a transcrição, chamado pelo botão de início
+    public void StartTranscription()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (appVoiceExperience == null)
         {
-            if (!active)
-            {
-                StartTranscription();
-            }
-            else
-            {
-                StopTranscription();
-            }
+            Debug.LogError("AppVoiceExperience não foi atribuído no Inspector!");
+            return;
+        }
+
+        if (!active)
+        {
+            active = true;
+            appVoiceExperience.Activate();
+            appVoiceExperience.DictationEvents.OnPartialTranscription.AddListener(OnPartialTranscription);
+            Debug.Log("Transcrição iniciada.");
+        }
+    }
+
+    // Método público para parar a transcrição, chamado pelo botão de parada
+    public void StopTranscription()
+    {
+        if (active)
+        {
+            active = false;
+            appVoiceExperience.Deactivate();
+            appVoiceExperience.DictationEvents.OnPartialTranscription.RemoveListener(OnPartialTranscription);
+            Debug.Log("Transcrição interrompida.");
         }
     }
 
@@ -38,20 +53,5 @@ public class DictationHandler : MonoBehaviour
     {
         Debug.Log(transcription);
         // Use a transcrição aqui, como exibir na tela ou processar o texto
-    }
-
-    private void StartTranscription()
-    {
-        active = true;
-        appVoiceExperience.Activate();
-        appVoiceExperience.DictationEvents.OnPartialTranscription.AddListener(OnPartialTranscription);
-    }
-
-    private void StopTranscription()
-    {
-        active = false;
-        appVoiceExperience.Deactivate();
-        appVoiceExperience.DictationEvents.OnPartialTranscription.RemoveListener(OnPartialTranscription);
-        Debug.Log("Transcrição interrompida pelo botão.");
     }
 }
