@@ -4,12 +4,15 @@ using Meta.WitAi;
 using Meta.WitAi.Dictation;
 using Oculus.Voice;
 using Oculus.Voice.Dictation;
+using TMPro;
+using static System.Net.Mime.MediaTypeNames;
 
 public class DictationHandler : MonoBehaviour
 {
     [Header("Wit Configuration")]
     [SerializeField] private AppDictationExperience appVoiceExperience;
     public bool active;
+    public TextMeshProUGUI transcript;
 
     void Start()
     {
@@ -52,6 +55,6 @@ public class DictationHandler : MonoBehaviour
     private void OnPartialTranscription(string transcription)
     {
         Debug.Log(transcription);
-        // Use a transcrição aqui, como exibir na tela ou processar o texto
+        transcript.text = transcription;
     }
 }
