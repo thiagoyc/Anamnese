@@ -14,14 +14,6 @@ public class DictationHandler : MonoBehaviour
     public bool active;
     public TextMeshProUGUI transcript;
 
-    void Start()
-    {
-        foreach (var device in Microphone.devices)
-        {
-            Debug.Log("Name: " + device);
-        }
-    }
-
     // Método público para iniciar a transcrição, chamado pelo botão de início
     public void StartTranscription()
     {

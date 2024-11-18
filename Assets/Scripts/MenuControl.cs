@@ -7,19 +7,6 @@ public class MenuControl : MonoBehaviour
     public GameObject StartRecordingMenu;
     public GameObject StopRecordingMenu;
 
-    private void Update () {
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            StartRecordingTrigger();
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            StopRecordingTrigger();
-        }
-        
-    }
-
     public void StartRecordingTrigger() 
     {
         if (StartRecordingMenu.activeInHierarchy == false)

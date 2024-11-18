@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
-  m_Name: VoiceDictation
+  m_Name: TextToSpeechConfig
   m_EditorClassIdentifier: 
-  _clientAccessToken: 4DYP76BBBX7TJIOYE72JJ3ZLSFEWUAAB
+  _clientAccessToken: IN4TXCQLMSAZGEQVXY52IJFEUZ34HGVA
   _appInfo:
-    name: anamnese
-    id: 1235850150958984
-    lang: pt
+    name: tts
+    id: 553299200893134
+    lang: en
     isPrivate: 1
-    createdAt: 2024-11-04T10:04:31-0800
+    createdAt: 2024-11-18T11:20:15-0800
     trainingStatus: 1
     lastTrainDuration: 0
     lastTrainedAt: 1969-12-31T16:00:00-0800
@@ -534,7 +534,7 @@ MonoBehaviour:
       - phoneme_events
       - word_events
   _configData: []
-  _configurationId: f3264b2c-aa48-4e33-9809-24393dde97e6
+  _configurationId: 68906b43-ce23-46b5-afa0-01a2fecc454e
   timeoutMS: 10000
   endpointConfiguration:
     _uriScheme: 
@@ -549,9 +549,9 @@ MonoBehaviour:
     _converse: 
   isDemoOnly: 0
   useConduit: 1
-  _manifestLocalPath: ConduitManifest-bd5e13a5-89bc-4174-a64e-12da55cfab52.json
+  _manifestLocalPath: ConduitManifest-42c4ced0-a9c1-419e-94c1-a90b9a3907b4.json
   excludedAssemblies:
   - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   relaxedResolution: 0
-  _lastRefreshSeconds: 1731954114.2070096
+  _lastRefreshSeconds: 1731957618.8476326
