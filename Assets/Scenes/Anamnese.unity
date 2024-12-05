@@ -14802,6 +14802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1393697398}
+  - component: {fileID: 1393697399}
   m_Layer: 0
   m_Name: PatientMenu
   m_TagString: Untagged
@@ -14828,6 +14829,25 @@ Transform:
   - {fileID: 1079575563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1393697399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393697397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93449986ae44ab4fb1f756802e77a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeartbeatRateMenu: {fileID: 0}
+  RespiratoryRateMenu: {fileID: 0}
+  BloodPresureMenu: {fileID: 0}
+  AbsInspectionMenu: {fileID: 0}
+  AbsPalpationMenu: {fileID: 0}
+  GenitalInspectionMenu: {fileID: 0}
+  RectalExaminationMenu: {fileID: 0}
 --- !u!1 &1403128288
 GameObject:
   m_ObjectHideFlags: 0
@@ -15677,7 +15697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1468386897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16041,6 +16061,63 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &1499911513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_Name
+      value: XR Device Simulator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
 --- !u!1 &1511050474
 GameObject:
   m_ObjectHideFlags: 0
@@ -16506,7 +16583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1543416874
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17343,7 +17420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1602463002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19826,7 +19903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1849615919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20457,7 +20534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1913791601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22071,6 +22148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2003671869}
+  - component: {fileID: 2003671870}
   m_Layer: 0
   m_Name: ExamMenu
   m_TagString: Untagged
@@ -22102,6 +22180,25 @@ Transform:
   - {fileID: 2135570153}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &2003671870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003671868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93449986ae44ab4fb1f756802e77a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeartbeatRateMenu: {fileID: 2056627872}
+  RespiratoryRateMenu: {fileID: 1602463001}
+  BloodPresureMenu: {fileID: 1913791600}
+  AbsInspectionMenu: {fileID: 1543416873}
+  AbsPalpationMenu: {fileID: 2130373062}
+  GenitalInspectionMenu: {fileID: 1849615918}
+  RectalExaminationMenu: {fileID: 1468386896}
 --- !u!1 &2012053825
 GameObject:
   m_ObjectHideFlags: 0
@@ -22791,7 +22888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2056627873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23570,7 +23667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2130373063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36881,3 +36978,4 @@ SceneRoots:
   - {fileID: 920141283}
   - {fileID: 1271522214}
   - {fileID: 915769008}
+  - {fileID: 1499911513}
