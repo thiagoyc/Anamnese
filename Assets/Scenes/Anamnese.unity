@@ -7212,10 +7212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 553812558}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 962811306}
-  resultText: "- Pr\xF3stata fibroel\xE1stica - Sem n\xF3dulos, indolor, m\xF3vel
-    - Sulco mediano apagado \xE0s custas de aumento sim\xE9trico dos lobos laterais
-    - Peso aproximado de 60g (3 polpas digitais)."
+  resultObject: {fileID: 962811304}
   audioSource: {fileID: 0}
 --- !u!114 &553812558
 MonoBehaviour:
@@ -17169,8 +17166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1414973744}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 1001155791}
-  resultText: "- Plano - Cicatriz hipotr\xF3fica transversa em fossa il\xEDaca direita."
+  resultObject: {fileID: 1001155789}
   audioSource: {fileID: 0}
 --- !u!114 &1414973744
 MonoBehaviour:
@@ -20900,8 +20896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1632425969}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 1417324150}
-  resultText: 145 x 95 mmHg
+  resultObject: {fileID: 1417324149}
   audioSource: {fileID: 0}
 --- !u!114 &1632425969
 MonoBehaviour:
@@ -21363,8 +21358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1666968172}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 614172609}
-  resultText: "- Genit\xE1lia anat\xF4mica - Exterioriza\xE7\xE3o glandar sem dificuldade"
+  resultObject: {fileID: 614172607}
   audioSource: {fileID: 0}
 --- !u!114 &1666968172
 MonoBehaviour:
@@ -22340,8 +22334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1750968231}
   progressSpeed: 0.2
-  resultDisplay: {fileID: 22416602}
-  resultText: 68 bpm
+  resultObject: {fileID: 22416601}
   audioSource: {fileID: 1343975338}
 --- !u!114 &1750968231
 MonoBehaviour:
@@ -25854,9 +25847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1988292315}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 1267421965}
-  resultText: "- Palpa\xE7\xE3o abdominal: indolor - Sem dor \xE0 descompress\xE3o
-    s\xFAbita - Aus\xEAncia de visceromegalias ou massas palp\xE1veis."
+  resultObject: {fileID: 1267421963}
   audioSource: {fileID: 0}
 --- !u!114 &1988292315
 MonoBehaviour:
@@ -25998,8 +25989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 1999316859}
   progressSpeed: 0.5
-  resultDisplay: {fileID: 2018498275}
-  resultText: 12 irpm
+  resultObject: {fileID: 2018498273}
   audioSource: {fileID: 0}
 --- !u!114 &1999316859
 MonoBehaviour:
@@ -29303,7 +29293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &919132148993559103
 MonoBehaviour:
   m_ObjectHideFlags: 0
